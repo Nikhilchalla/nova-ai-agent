@@ -54,7 +54,7 @@ function MessageBubble({ msg }) {
   return (
     <div style={{
       display: "flex", justifyContent: isUser ? "flex-end" : "flex-start",
-      marginBottom: 16, animation: "slideIn 0.3s ease-out"
+      marginBottom: 8, animation: "slideIn 0.3s ease-out"
     }}>
       {!isUser && (
         <div style={{
@@ -71,7 +71,7 @@ function MessageBubble({ msg }) {
           : "rgba(15, 23, 42, 0.8)",
         border: isUser ? "none" : "1px solid rgba(255,255,255,0.08)",
         borderRadius: isUser ? "20px 20px 4px 20px" : "4px 20px 20px 20px",
-        padding: "12px 16px",
+        padding: "10px 14px",
         backdropFilter: "blur(10px)",
         boxShadow: isUser ? "0 4px 20px rgba(79,70,229,0.3)" : "0 4px 20px rgba(0,0,0,0.3)"
       }}>
@@ -240,7 +240,7 @@ export default function AIAgent() {
 
   return (
     <div style={{
-      height: "100%", width: "100%", background: "#020817",
+      height: "100%", width: "100%", background: "#000000",
       fontFamily: "'DM Sans', 'Segoe UI', sans-serif",
       display: "flex", flexDirection: "column",
       color: "#e2e8f0"
@@ -271,7 +271,7 @@ export default function AIAgent() {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{
             width: 42, height: 42, borderRadius: "50%",
-            background: "linear-gradient(135deg, #00d4ff, #a78bfa, #34d399)",
+            background: "linear-gradient(135deg, #ffffff, #aaaaaa, #ffffff)",
             display: "flex", alignItems: "center", justifyContent: "center",
             fontSize: 20, animation: "glow 3s ease-in-out infinite",
             boxShadow: "0 0 20px rgba(0,212,255,0.3)"
@@ -305,7 +305,7 @@ export default function AIAgent() {
 
       {/* Messages */}
       <div style={{
-        flex: 1, overflowY: "auto", padding: "24px 24px",
+        flex: 1, overflowY: "auto", padding: "16px 24px",
         width: "100%"
       }}>
         {messages.map((msg, i) => <MessageBubble key={i} msg={msg} />)}
