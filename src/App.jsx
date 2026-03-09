@@ -305,8 +305,8 @@ export default function AIAgent() {
 
       {/* Messages */}
       <div style={{
-        flex: 1, overflowY: "auto", padding: "24px 16px",
-        maxWidth: 800, width: "100%", margin: "0 auto"
+        flex: 1, overflowY: "auto", padding: "24px 24px",
+        width: "100%"
       }}>
         {messages.map((msg, i) => <MessageBubble key={i} msg={msg} />)}
         {isLoading && (
@@ -329,7 +329,7 @@ export default function AIAgent() {
 
       {/* Quick Prompts */}
       {messages.length <= 2 && (
-        <div style={{ maxWidth: 800, width: "100%", margin: "0 auto", padding: "0 16px 16px" }}>
+        <div style={{ width: "100%", padding: "0 24px 16px" }}>
           <div style={{ fontSize: 11, color: "#475569", marginBottom: 10, letterSpacing: 1 }}>TRY ASKING</div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
             {quickPrompts.map(p => (
@@ -344,7 +344,7 @@ export default function AIAgent() {
       )}
 
       {/* Tool Selector */}
-      <div style={{ maxWidth: 800, width: "100%", margin: "0 auto", padding: "0 16px 10px" }}>
+      <div style={{ width: "100%", padding: "0 24px 10px" }}>
         <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
           {AGENT_TOOLS.map(tool => (
             <button key={tool.id} onClick={() => setSelectedTool(selectedTool === tool.id ? null : tool.id)} style={{
@@ -365,7 +365,7 @@ export default function AIAgent() {
         padding: "12px 16px 20px", borderTop: "1px solid rgba(255,255,255,0.06)",
         background: "rgba(2,8,23,0.98)", backdropFilter: "blur(20px)"
       }}>
-        <div style={{ maxWidth: 800, width: "100%", margin: "0 auto" }}>
+        <div style={{ width: "100%" }}>
           <div style={{
             display: "flex", gap: 10, alignItems: "flex-end",
             background: "rgba(15,23,42,0.9)", border: "1px solid rgba(255,255,255,0.1)",
