@@ -1018,7 +1018,7 @@ export default function AIAgent() {
           </div>
         </div>
 
-      </div> {/* closes main area */}
-    </div>   {/* closes outer flex row */}
+      </div>
+    </div>
   );
 }
