@@ -451,7 +451,7 @@ function TypingIndicator() {
     <div style={{ display: "flex", alignItems: "center", gap: "6px", padding: "14px 18px" }}>
       {[0, 1, 2].map(i => (
         <div key={i} style={{
-          width: 8, height: 8, borderRadius: "50%", background: "#00d4ff",
+          width: 8, height: 8, borderRadius: "50%", background: "#7b7e7e",
           animation: "pulse 1.4s ease-in-out infinite",
           animationDelay: `${i * 0.2}s`,
           opacity: 0.7
@@ -484,7 +484,7 @@ function MessageBubble({ msg }) {
     }}>
       {!isUser && (
         <div style={{
-          width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg, #00d4ff, #a78bfa)",
+          width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg, #252627, #a78bfa)",
           display: "flex", alignItems: "center", justifyContent: "center",
           fontSize: 16, flexShrink: 0, marginRight: 10, marginTop: 4,
           boxShadow: "0 0 12px rgba(0,212,255,0.4)"
@@ -503,7 +503,7 @@ function MessageBubble({ msg }) {
       }}>
         {msg.toolUsed && (
           <div style={{
-            fontSize: 11, color: "#00d4ff", marginBottom: 8,
+            fontSize: 11, color: "#7b7e7e", marginBottom: 8,
             display: "flex", alignItems: "center", gap: 4, opacity: 0.8
           }}>
             <span>⚡</span> Used {msg.toolUsed}
