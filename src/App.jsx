@@ -747,7 +747,7 @@ export default function AIAgent() {
 
   return (
     <div style={{
-      height: "100%", width: "100%", background: "#000000",
+      height: "100%", width: "100%", background: "#aebff5",
       fontFamily: "'DM Sans', 'Segoe UI', sans-serif",
       display: "flex", flexDirection: "row", // CHANGED: row for sidebar layout
       color: "#e2e8f0"
@@ -755,7 +755,7 @@ export default function AIAgent() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body, #root { height: 100%; margin: 0; padding: 0; background: #000000; }
+        html, body, #root { height: 100%; margin: 0; padding: 0; background: #aebff5; }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(0,212,255,0.2); border-radius: 3px; }
