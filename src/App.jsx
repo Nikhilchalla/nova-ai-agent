@@ -494,7 +494,7 @@ function MessageBubble({ msg }) {
         maxWidth: "75%",
         background: isUser
           ? "linear-gradient(135deg, #1e40af, #4f46e5)"
-          : "rgba(15, 23, 42, 0.8)",
+          : "rgba(10,15,30,0.8)",
         border: isUser ? "none" : "1px solid rgba(255,255,255,0.08)",
         borderRadius: isUser ? "20px 20px 4px 20px" : "4px 20px 20px 20px",
         padding: "10px 14px",
@@ -774,7 +774,7 @@ export default function AIAgent() {
       <div style={{
         width: showHistory ? 260 : 0,
         minWidth: showHistory ? 260 : 0,
-        background: "#050d1a",
+        background: "#080c18",
         borderRight: "1px solid rgba(255,255,255,0.06)",
         display: "flex", flexDirection: "column",
         overflow: "hidden",
@@ -828,7 +828,7 @@ export default function AIAgent() {
         <div style={{
           padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
-          background: "rgba(2,8,23,0.95)", backdropFilter: "blur(20px)",
+          background: "rgba(10,15,30,0.95)", backdropFilter: "blur(20px)",
           position: "sticky", top: 0, zIndex: 100, flexShrink: 0
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
@@ -888,7 +888,7 @@ export default function AIAgent() {
                 display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16
               }}>✦</div>
               <div style={{
-                background: "rgba(15,23,42,0.8)", border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(10,15,30,0.8)", border: "1px solid rgba(255,255,255,0.08)",
                 borderRadius: "4px 20px 20px 20px"
               }}>
                 <TypingIndicator />
@@ -951,7 +951,7 @@ export default function AIAgent() {
         {/* Input Area */}
         <div style={{
           padding: "12px 16px 20px", borderTop: "1px solid rgba(255,255,255,0.06)",
-          background: "rgba(2,8,23,0.98)", backdropFilter: "blur(20px)", flexShrink: 0
+          background: "rgba(10,15,30,0.98)", backdropFilter: "blur(20px)", flexShrink: 0
         }}>
           {/* NEW: Hidden file input */}
           <input
@@ -964,7 +964,7 @@ export default function AIAgent() {
           <div style={{ maxWidth: 800, width: "100%", margin: "0 auto" }}>
             <div style={{
               display: "flex", gap: 10, alignItems: "flex-end",
-              background: "rgba(15,23,42,0.9)", border: "1px solid rgba(255,255,255,0.1)",
+              background: "rgba(10,15,30,0.9)", border: "1px solid rgba(255,255,255,0.1)",
               borderRadius: 16, padding: "8px 8px 8px 12px",
               boxShadow: "0 0 30px rgba(0,0,0,0.3)",
               transition: "border-color 0.2s",
