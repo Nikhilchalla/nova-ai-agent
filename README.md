@@ -1,2 +1,2 @@
 # nova-ai-agent
-⚡ NOVA ( Neural Optimization & Velocity Agent ) AI Agent — Blazing-fast AI assistant powered by Groq & LLaMA 3. Write code, search the web, analyze data, and plan anything. Built with React + Vite.
+⚡NOVA ( Neural Optimization & Velocity Agent ) AI Agent: Blazing fast AI assistant powered by Groq & LLaMA 3. Write code, search the web, analyze data, and plan anything. Built with React + Vite.
