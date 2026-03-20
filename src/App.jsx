@@ -474,7 +474,7 @@ export default function AIAgent() {
         <div style={{
           flex: 1, overflowY: "auto",
           padding: "28px 24px 12px",
-          maxWidth: 760, width: "100%",
+          maxWidth: 900, width: "100%",
           margin: "0 auto", alignSelf: "stretch", boxSizing: "border-box"
         }}>
           {messages.map((msg, i) => <MessageBubble key={i} msg={msg} />)}
@@ -495,7 +495,7 @@ export default function AIAgent() {
         {/* ── Quick Prompts ── */}
         {messages.length <= 2 && (
           <div style={{
-            maxWidth: 760, width: "100%", margin: "0 auto",
+            maxWidth: 900, width: "100%", margin: "0 auto",
             padding: "0 24px 14px", boxSizing: "border-box"
           }}>
             <div style={{ fontSize: 10, color: C.textMuted, marginBottom: 10, letterSpacing: "1.5px" }}>
@@ -516,7 +516,7 @@ export default function AIAgent() {
 
         {/* ── Tool Selector ── */}
         <div style={{
-          maxWidth: 760, width: "100%", margin: "0 auto",
+          maxWidth: 900, width: "100%", margin: "0 auto",
           padding: "0 24px 10px", boxSizing: "border-box"
         }}>
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
@@ -539,7 +539,7 @@ export default function AIAgent() {
         {/* ── File Preview ── */}
         {attachedFile && (
           <div style={{
-            maxWidth: 760, width: "100%", margin: "0 auto",
+            maxWidth: 900, width: "100%", margin: "0 auto",
             padding: "0 24px 8px", boxSizing: "border-box"
           }}>
             <div style={{
@@ -565,7 +565,7 @@ export default function AIAgent() {
             accept=".txt,.md,.csv,.json,.js,.py,.html,.css"
             onChange={handleFileUpload} style={{ display: "none" }} />
 
-          <div style={{ maxWidth: 760, width: "100%", margin: "0 auto" }}>
+          <div style={{ maxWidth: 900, width: "100%", margin: "0 auto" }}>
             <div style={{
               display: "flex", gap: 8, alignItems: "flex-end",
               background: C.surface,
